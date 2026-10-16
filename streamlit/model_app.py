@@ -13,10 +13,7 @@ from datetime import datetime, timedelta
 import os
 
 import sklearn
-import xgboost
-
-print("sklearn:", sklearn.__version__)
-print("xgboost:", xgboost.__version__)
+st.write("Scikit-learn version:", sklearn.__version__)
 
 model = joblib.load("streamlit/delivery_model.pkl")
 
