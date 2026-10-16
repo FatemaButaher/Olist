@@ -12,12 +12,9 @@ from datetime import datetime, timedelta
 
 import os
 
-st.write("Current folder:", os.getcwd())
-st.write("Files found:", os.listdir())
+model = joblib.load("streamlit/delivery_model.pkl")
 
-model = joblib.load("delivery_model.pkl")
-
-df = pd.read_csv("products.csv")
+df = pd.read_csv("streamlit/products.csv")
 
 st.title("📦 When My Order Come?")
 
