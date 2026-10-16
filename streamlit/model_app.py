@@ -10,6 +10,10 @@ import math
 
 from datetime import datetime, timedelta
 
+import os
+
+st.write("Current folder:", os.getcwd())
+st.write("Files found:", os.listdir())
 
 model = joblib.load("delivery_model.pkl")
 
